@@ -1,4 +1,32 @@
-syntax on
+"" Settings
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+syntax on                 " Set syntax highlighting on
+set nu                    " Set line numbers on
+filetype plugin indent on " Detect filetype, load the filetype plugin, and load indent file
+set wildmenu              " Better command-line completion
+set paste
+set backspace=2
+set tabstop=2             " size of a hard tabstop
+set shiftwidth=2          " size of an indent
+set softtabstop=2         " a combination of spaces and tabs are used to simulate tab stops at a width other than the (hard)tabstop
+set smarttab              " make tab insert indents instead of tabs at beginning of a line
+set expandtab             " always uses spaces instead of tab chracters
+set autoindent
+set smartindent
+set nocompatible          " Backwards compatible with vi
+set cursorline            " highlight the current line
+set showmatch             " highlight matching [{()}]
+set incsearch             " search as characters are entered
+set hlsearch              " highlight matches
+hi Comment ctermfg=LightBlue " Better color for comments
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+
+
+"" Key mapping
+
+" Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
+" which is the default
+map Y y$
