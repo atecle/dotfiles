@@ -8,7 +8,7 @@ declare -r GITHUB_REPOSITORY="atecle/dotfiles"
 
 declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
-declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/src/os/utils.sh"
+declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -25,7 +25,6 @@ download() {
     local output="$2"
 
     if command -v "curl" &> /dev/null; then
-
         curl -LsSo "$output" "$url" &> /dev/null
         #     │││└─ write output to file
         #     ││└─ show error messages
@@ -116,7 +115,7 @@ download_dotfiles() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    cd "$dotfilesDirectory/src/os" \
+    cd "$dotfilesDirectory/" \
         || return 1
 
 }
@@ -255,7 +254,7 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     if ! $skipQuestions; then
-        ./restart.sh
+        . "restart.sh" || exit 1
     fi
 
 }
