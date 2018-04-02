@@ -1,0 +1,8 @@
+#!/bin/sh
+# 
+# Converts .mov file to a .gif 
+# attribution: https://gist.github.com/SheldonWangRJT/8d3f44a35c8d1386a396b9b49b43c385
+#
+# Usage: First argument is path to .mov file, second is name of file, you should include .gif 
+
+ffmpeg -i $1 -pix_fmt rgb8 -r 10 $2 && gifsicle -O3 $2 -o $2
