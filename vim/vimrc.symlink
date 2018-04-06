@@ -20,8 +20,20 @@ set incsearch             " search as characters are entered
 set hlsearch              " highlight matches
 hi Comment ctermfg=LightBlue " Better color for comments
 
+"" Start up defaults 
+
+autocmd vimenter * NERDTree " Open NERDTree automatically 
+
 "" Key mapping
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$
+nmap <F6> :NERDTreeToggle<CR>
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+call plug#end()
+
