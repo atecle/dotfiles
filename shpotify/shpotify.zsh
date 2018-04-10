@@ -1,10 +1,10 @@
 # v important 
 alias sp="spotify"
-alias sprev='spotify prev'
-alias spnext='spotify next'
+alias prev='spotify prev'
+alias next='spotify next'
 alias spinfo='spotify info'
-alias spause='spotify pause' 
-alias splay='spotify play'
-alias sprplay='spotify replay'
-alias sptog='spotify toggle'
+alias pause='spotify pause' 
+alias play='spotify play'
+alias replay='spotify replay'
+alias toggle='spotify toggle'
 
