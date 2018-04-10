@@ -138,6 +138,13 @@ gem install jekyll
 # https://github.com/eddiezane/lunchy
 gem install lunchy
 
+# rails 
+#
+# Ruby on Rails
+#
+#
+# https://github.com/rails/rails
+gem install rails
 # Tmuxinator
 #
 # Create and manage tmux sessions easily.
