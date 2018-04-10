@@ -23,6 +23,9 @@ hi Comment ctermfg=LightBlue " Better color for comments
 "" Start up defaults 
 
 autocmd vimenter * NERDTree " Open NERDTree automatically 
+au BufRead,BufNewFile Podfile set filetype=ruby " Set syntax=ruby for Podfile
+au BufRead,BufNewFile Brewfile set filetype=ruby " Set syntax=ruby for Podfile
+au BufRead,BufNewFile *.podspec set filetype=ruby " Set syntax=ruby for Podfile
 
 "" Key mapping
 
