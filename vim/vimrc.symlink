@@ -37,6 +37,7 @@ nmap <F6> :NERDTreeToggle<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
