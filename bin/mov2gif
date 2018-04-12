@@ -5,4 +5,4 @@
 #
 # Usage: First argument is path to .mov file, second is name of file, you should include .gif 
 
-ffmpeg -i $1 -pix_fmt rgb8 -r 10 $2 && gifsicle -O3 $2 -o $2
+ffmpeg -i $1 -pix_fmt rgb8 -vf scale=400:-1 -r 10 $2 && gifsicle -O3 $2 -o $2
