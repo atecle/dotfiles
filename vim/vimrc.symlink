@@ -26,6 +26,7 @@ autocmd vimenter * NERDTree " Open NERDTree automatically
 au BufRead,BufNewFile Podfile set filetype=ruby " Set syntax=ruby for Podfile
 au BufRead,BufNewFile Brewfile set filetype=ruby " Set syntax=ruby for Podfile
 au BufRead,BufNewFile *.podspec set filetype=ruby " Set syntax=ruby for Podfile
+au BufNewFile,BufRead *.gradle setf groovy " Set syntax highling for gradle
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " quit NERDTree if only one file left
 
 "" Key mapping
@@ -39,6 +40,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 

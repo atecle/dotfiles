@@ -8,5 +8,5 @@ atom.symlink/storage
 atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
-
+secrets.txt
 git/gitconfig.local.symlink
