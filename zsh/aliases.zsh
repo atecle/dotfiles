@@ -5,3 +5,6 @@ alias desktop="cd ~/Desktop"
 alias dev="cd ~/Developer"
 alias dotfiles="cd ~/.dotfiles"
 alias audio="SwitchAudioSource"
+alias jkl="jekyll"
+alias react="create-react-app"
+
