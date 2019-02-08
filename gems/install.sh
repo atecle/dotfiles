@@ -30,65 +30,12 @@ _gem_is_installed() {
 # Global Gems
 ###############################################################################
 
-# artoo
-#
-# Ruby robotics framework using Celluloid with support for 15 different
-# platforms.
-#
-# http://artoo.io/
-# https://github.com/hybridgroup/artoo
-gem install artoo
-
-# bro pages
-#
-# bro pages are a highly readable supplement to man pages.
-#
-# bro pages show concise, common-case examples for Unix commands.
-#
-# NOTE: alias in shell as `eg`.
-#
-# http://bropages.org/
-gem install bropages
-
-# bundler-audit
-#
-# Patch-level verification for Bundler.
-#
-# https://github.com/rubysec/bundler-audit
-gem install bundler-audit
-
-# Chronic
-#
-# Chronic is a natural language date/time parser written in pure Ruby. See
-# below for the wide variety of formats Chronic will parse.
-#
-# https://github.com/mojombo/chronic/
-gem install chronic
-
 # synx
 #
 # A command-line tool that reorganizes your Xcode project folder to match your Xcode groups
 #
 # https://github.com/venmo/synx 
 gem install synx
-
-# contracts.ruby
-#
-# contracts.ruby brings code contracts to the Ruby language. Code contracts
-# allow you make some assertions about your code, and then checks them to make
-# sure they hold.
-
-# https://github.com/egonSchiele/contracts.ruby
-# http://egonschiele.github.io/contracts.ruby/
-gem install contracts
-
-# faker
-#
-# A library for generating fake data such as names, addresses, and phone
-# numbers.
-#
-# https://github.com/stympy/faker
-gem install faker
 
 # foreman - manage Procfile-based applications
 #
@@ -98,14 +45,6 @@ gem install faker
 #
 # https://github.com/ddollar/foreman
 gem install foreman
-
-# fpm
-#
-# Effing package management. Build packages for multiple platforms (deb,
-# rpm, etc) with great ease and sanity.
-#
-# https://github.com/jordansissel/fpm
-gem install fpm
 
 # gem_updater
 #
@@ -145,9 +84,4 @@ gem install lunchy
 #
 # https://github.com/rails/rails
 gem install rails
-# Tmuxinator
-#
-# Create and manage tmux sessions easily.
-#
-# https://github.com/tmuxinator/tmuxinator
-gem install tmuxinator
+
