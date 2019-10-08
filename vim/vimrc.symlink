@@ -42,6 +42,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'cfdrake/vim-pbxproj'
-
+Plug 'sheerun/vim-polyglot'
+Plug 'avakhov/vim-yaml'
 call plug#end()
 
